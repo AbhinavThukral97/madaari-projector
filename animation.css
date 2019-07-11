@@ -182,8 +182,7 @@ button.fill:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 75px;
-  height: 125px;
-  background: #eee; }
+  height: 125px; }
 
 .stick-figure {
   display: none;
