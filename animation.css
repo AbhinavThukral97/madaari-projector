@@ -2,6 +2,32 @@
 body {
   margin: 0; }
 
+.run {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  z-index: 1000; }
+  .run button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #669aff;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    cursor: pointer; }
+
 @-webkit-keyframes blink {
   0% {
     height: 30px; }
@@ -33,6 +59,7 @@ body {
     height: 30px; } }
 
 .projection-screen {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background: #fff; }
@@ -46,6 +73,15 @@ body {
     -webkit-transform: translate(-50%, -50%) scale(1.2);
     -ms-transform: translate(-50%, -50%) scale(1.2);
     transform: translate(-50%, -50%) scale(1.2); }
+  .projection-screen .connected {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 15px;
+    width: 15px;
+    background: #57bd92;
+    border-radius: 100%;
+    z-index: 1000; }
 
 .animation-expression {
   width: 120px;

@@ -71,6 +71,9 @@ function selectAvatar(name) {
 }
 
 function selectAction(avatar, action) {
+  if (avatar == "None" && action == "None") {
+    $(".animation-avatar").css("display", "none");
+  }
   let index = avatars.indexOf(avatar);
   if (index > -1) {
     let actionInd = actions[index].indexOf(action);
@@ -100,5 +103,7 @@ function selectAction(avatar, action) {
 }
 
 $(document).ready(function() {
-  expressionHappy();
+  $(".run button").click(function() {
+    $(".run").css("display", "none");
+  });
 });
